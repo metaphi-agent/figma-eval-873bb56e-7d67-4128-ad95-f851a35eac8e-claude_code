@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Editor directories
+.vscode/
+.idea/
+
+# Figma exports (large files - not needed in repo)
+figma_exports/
+ground_truth/
+style_guide/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
