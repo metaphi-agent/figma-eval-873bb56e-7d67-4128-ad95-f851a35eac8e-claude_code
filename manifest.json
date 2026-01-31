@@ -1,0 +1,19 @@
+{
+  "project_id": "873bb56e-7d67-4128-ad95-f851a35eac8e",
+  "figma_file_key": "DeibYwZPtGTCRzNdXQDf03",
+  "project_name": "Steam Redesign",
+  "status": "in_progress",
+  "steps": {
+    "extract_from_figma": "done",
+    "export_ground_truth": "in_progress",
+    "scaffold_project": "pending",
+    "generate_components": "pending",
+    "deploy_and_push": "pending"
+  },
+  "artifacts": {
+    "figma_file_key": "DeibYwZPtGTCRzNdXQDf03",
+    "figma_exports_dir": "/figma-claude-sonnet/873bb56e-7d67-4128-ad95-f851a35eac8e/figma_exports",
+    "total_frames": 50
+  },
+  "notes": "Steam Redesign - 50+ screens including Store, Library, Community, Profile sections"
+}

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors extracted from Figma styles */
+  --color-text-main: #dcdedf;
+  --color-text-dim: #8b929a;
+
+  --color-bg-main: #1b2838;
+  --color-bg-highlight: #2a475e;
+  --color-bg-hover: #3d4450;
+  --color-bg-tertiary: #23262e;
+
+  --color-primary: #66c0f4;
+  --color-secondary: #4e697d;
+
+  --color-accent-green: #5ba32b;
+  --color-accent-green-hi: #59bf40;
+  --color-accent-red: #d94126;
+  --color-accent-yellow: #ffc82c;
+  --color-accent-blue: #1a9fff;
+
+  /* Typography - Steam uses Motiva Sans, fallback to system fonts */
+  --font-family-sans: "Motiva Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Spacing scale */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-highlight);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bg-hover);
+}
+
+/* Smooth transitions */
+button, a {
+  transition: all 0.15s ease-in-out;
+}
