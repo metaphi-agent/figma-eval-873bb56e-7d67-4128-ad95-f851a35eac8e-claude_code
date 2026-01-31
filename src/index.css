@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Colors - Text */
+  --color-text-main: #f4f4f4;
+  --color-text-dim: #76808c;
+
+  /* Colors - Background */
+  --color-bg-main: #0e141b;
+  --color-bg-highlight: #1e2329;
+  --color-bg-hover: #313843;
+  --color-bg-tertiary: #212b45;
+
+  /* Colors - Brand */
+  --color-primary: #66c0f4;
+  --color-secondary: #4b619b;
+
+  /* Colors - Accent */
+  --color-accent-green: #a1cd44;
+  --color-accent-red: #c74545;
+  --color-accent-yellow: #f5a623;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for Steam-like feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-dim);
+}

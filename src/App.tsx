@@ -1,82 +1,84 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Layout from './components/blocks/Layout'
+import { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Header } from './components/blocks';
 
 // Lazy load pages for better performance
-import { lazy, Suspense } from 'react'
+const StorePage = lazy(() => import('./pages/StorePage'));
+const CartPage = lazy(() => import('./pages/CartPage'));
+const WishlistPage = lazy(() => import('./pages/WishlistPage'));
+const LibraryPage = lazy(() => import('./pages/LibraryPage'));
+const CommunityPage = lazy(() => import('./pages/CommunityPage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage'));
+const DownloadsPage = lazy(() => import('./pages/DownloadsPage'));
+const SettingsPage = lazy(() => import('./pages/SettingsPage'));
 
-const StorePage = lazy(() => import('./pages/StorePage'))
-const ClientStore = lazy(() => import('./pages/ClientStore'))
-const Discover = lazy(() => import('./pages/Discover'))
-const Browse = lazy(() => import('./pages/Browse'))
-const PointShop = lazy(() => import('./pages/PointShop'))
-const Wishlist = lazy(() => import('./pages/Wishlist'))
-const Cart = lazy(() => import('./pages/Cart'))
-const LibraryHome = lazy(() => import('./pages/LibraryHome'))
-const LibraryCollections = lazy(() => import('./pages/LibraryCollections'))
-const Downloads = lazy(() => import('./pages/Downloads'))
-const CommunityHome = lazy(() => import('./pages/CommunityHome'))
-const GameCommunityHub = lazy(() => import('./pages/GameCommunityHub'))
-const Discussions = lazy(() => import('./pages/Discussions'))
-const Discussion = lazy(() => import('./pages/Discussion'))
-const Forum = lazy(() => import('./pages/Forum'))
-const Workshop = lazy(() => import('./pages/Workshop'))
-const Market = lazy(() => import('./pages/Market'))
-const Profile = lazy(() => import('./pages/Profile'))
-const ProfileGames = lazy(() => import('./pages/ProfileGames'))
-const ProfileScreenshots = lazy(() => import('./pages/ProfileScreenshots'))
-const Settings = lazy(() => import('./pages/Settings'))
-
-const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="w-12 h-12 border-4 border-[--color-primary] border-t-transparent rounded-full animate-spin"></div>
-  </div>
-)
+function LoadingScreen() {
+  return (
+    <div className="min-h-screen bg-bg-main flex items-center justify-center">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+        <p className="text-text-dim">Loading...</p>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Navigate to="/store" replace />} />
+    <Router>
+      <div className="min-h-screen bg-bg-main">
+        <Header />
+        <div className="pt-[33px]">
+          <Suspense fallback={<LoadingScreen />}>
+            <Routes>
+              {/* Store Routes */}
+              <Route path="/" element={<StorePage />} />
+              <Route path="/store" element={<StorePage />} />
+              <Route path="/store/game/:id" element={<StorePage />} />
+              <Route path="/browse" element={<StorePage />} />
+              <Route path="/discover" element={<StorePage />} />
+              <Route path="/points" element={<StorePage />} />
+              <Route path="/curators" element={<StorePage />} />
+              <Route path="/gift-cards" element={<StorePage />} />
+              <Route path="/news" element={<StorePage />} />
+              <Route path="/cart" element={<CartPage />} />
+              <Route path="/wishlist" element={<WishlistPage />} />
 
-            {/* Store Routes */}
-            <Route path="store" element={<StorePage />} />
-            <Route path="store/client" element={<ClientStore />} />
-            <Route path="discover" element={<Discover />} />
-            <Route path="browse" element={<Browse />} />
-            <Route path="points" element={<PointShop />} />
-            <Route path="wishlist" element={<Wishlist />} />
-            <Route path="cart" element={<Cart />} />
+              {/* Library Routes */}
+              <Route path="/library" element={<LibraryPage />} />
+              <Route path="/library/collections" element={<LibraryPage />} />
+              <Route path="/library/game/:id" element={<LibraryPage />} />
 
-            {/* Library Routes */}
-            <Route path="library" element={<LibraryHome />} />
-            <Route path="library/collections" element={<LibraryCollections />} />
+              {/* Community Routes */}
+              <Route path="/community" element={<CommunityPage />} />
+              <Route path="/discussions" element={<CommunityPage />} />
+              <Route path="/discussions/:id" element={<CommunityPage />} />
+              <Route path="/workshop" element={<CommunityPage />} />
+              <Route path="/market" element={<CommunityPage />} />
+              <Route path="/broadcasts" element={<CommunityPage />} />
 
-            {/* Downloads */}
-            <Route path="downloads" element={<Downloads />} />
+              {/* Profile Routes */}
+              <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/profile/:id" element={<ProfilePage />} />
+              <Route path="/profile/:id/games" element={<ProfilePage />} />
+              <Route path="/profile/:id/screenshots" element={<ProfilePage />} />
 
-            {/* Community Routes */}
-            <Route path="community" element={<CommunityHome />} />
-            <Route path="community/game/:id" element={<GameCommunityHub />} />
-            <Route path="community/discussions" element={<Discussions />} />
-            <Route path="community/discussion/:id" element={<Discussion />} />
-            <Route path="community/forum" element={<Forum />} />
-            <Route path="community/workshop" element={<Workshop />} />
-            <Route path="community/market" element={<Market />} />
+              {/* Downloads */}
+              <Route path="/downloads" element={<DownloadsPage />} />
 
-            {/* Profile Routes */}
-            <Route path="profile" element={<Profile />} />
-            <Route path="profile/games" element={<ProfileGames />} />
-            <Route path="profile/screenshots" element={<ProfileScreenshots />} />
+              {/* Settings Routes */}
+              <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/settings/privacy" element={<SettingsPage />} />
+              <Route path="/settings/profile" element={<SettingsPage />} />
 
-            {/* Settings */}
-            <Route path="settings" element={<Settings />} />
-          </Route>
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-  )
+              {/* Fallback */}
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </Suspense>
+        </div>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
