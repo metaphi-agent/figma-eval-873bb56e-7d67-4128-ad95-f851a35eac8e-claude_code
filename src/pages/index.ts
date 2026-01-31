@@ -1,0 +1,14 @@
+export { default as StorePage } from './StorePage';
+export { default as CartPage } from './CartPage';
+export { default as WishlistPage } from './WishlistPage';
+export { default as LibraryPage } from './LibraryPage';
+export { default as CommunityPage } from './CommunityPage';
+export { default as ProfilePage } from './ProfilePage';
+export { default as DownloadsPage } from './DownloadsPage';
+export { default as SettingsPage } from './SettingsPage';
+export { default as BrowsePage } from './BrowsePage';
+export { default as DiscoverPage } from './DiscoverPage';
+export { default as PointShopPage } from './PointShopPage';
+export { default as MarketPage } from './MarketPage';
+export { default as WorkshopPage } from './WorkshopPage';
+export { default as ForumPage } from './ForumPage';
