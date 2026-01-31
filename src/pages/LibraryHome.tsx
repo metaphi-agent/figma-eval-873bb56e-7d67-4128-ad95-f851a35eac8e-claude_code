@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 const LibraryHome = () => {
   const [selectedGame, setSelectedGame] = useState('bioshock')
-  const [viewMode, setViewMode] = useState<'list' | 'grid'>('list')
 
   const games = [
     { id: 'bioshock', name: 'Bioshock', playtime: '92 hours' },
