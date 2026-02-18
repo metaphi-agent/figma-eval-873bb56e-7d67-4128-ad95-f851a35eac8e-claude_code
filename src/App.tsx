@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Header } from './components/blocks';
 
 // Lazy load pages for better performance
@@ -31,12 +31,11 @@ function LoadingScreen() {
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-bg-main">
-        <Header />
-        <div className="pt-[33px]">
-          <Suspense fallback={<LoadingScreen />}>
-            <Routes>
+    <div className="min-h-screen bg-bg-main">
+      <Header />
+      <div className="pt-[33px]">
+        <Suspense fallback={<LoadingScreen />}>
+          <Routes>
               {/* Store Routes */}
               <Route path="/" element={<StorePage />} />
               <Route path="/store" element={<StorePage />} />
@@ -83,7 +82,6 @@ function App() {
           </Suspense>
         </div>
       </div>
-    </Router>
   );
 }
 

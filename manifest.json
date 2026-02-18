@@ -1,25 +1,22 @@
 {
-  "session_id": "session_20260131_082118",
-  "created_at": "2026-01-31T08:21:18.504959+00:00",
-  "steps": [
-    {
-      "name": "Step 7: Deploy & Push",
-      "status": "done",
-      "at": "2026-01-31T08:21:20.566992+00:00"
-    }
-  ],
+  "project_id": "873bb56e-7d67-4128-ad95-f851a35eac8e",
+  "figma_file_key": "DeibYwZPtGTCRzNdXQDf03",
+  "project_name": "Steam Redesign",
+  "status": "completed",
+  "steps": {
+    "extract_from_figma": "done",
+    "export_ground_truth": "done",
+    "scaffold_project": "done",
+    "generate_components": "done",
+    "deploy_and_push": "done"
+  },
   "artifacts": {
     "figma_file_key": "DeibYwZPtGTCRzNdXQDf03",
-    "figma_file_key_at": "2026-01-31T08:21:18.504959+00:00",
-    "preview_url": "https://ta-01kg9hbqw44k072setbvmx0f0w-5173.wo-uewsw3m5sb8lk88foxacd226b.w.modal.host",
-    "preview_url_at": "2026-01-31T08:21:19.522398+00:00"
+    "figma_exports_dir": "/figma-claude-sonnet/873bb56e-7d67-4128-ad95-f851a35eac8e/figma_exports",
+    "total_frames": 68,
+    "github_repo": "https://github.com/metaphi-agent/figma-eval-873bb56e-7d67-4128-ad95-f851a35eac8e-claude_code",
+    "preview_url": "https://ta-01kg9f69rm57k3wk3nraa9c4er-5173.wo-tj9s1blqt8rl0egrzl0ojj3se.w.modal.host",
+    "pages_implemented": 25
   },
-  "notes": [],
-  "updated_at": "2026-02-08T11:04:55.906984+00:00",
-  "preview_url": "https://ta-01kgyeredr7yn7jhkstrp2d0f2-5173.wo-degs4l2pxl6uh2veprg907wsr.w.modal.host",
-  "deployed_url": "https://storage.googleapis.com/metaphi-agent/figma-claude-opus-agent/873bb56e-7d67-4128-ad95-f851a35eac8e/index.html",
-  "github_repo_url": "https://github.com/metaphi-agent/figma-eval-873bb56e-7d67-4128-ad95-f851a35eac8e-claude_code",
-  "completed_steps": [
-    "Step 7: Deploy & Push"
-  ]
+  "notes": "Steam Redesign - Complete implementation with 25+ pages including Store (Store Page, Discover, Browse, Wishlist, Cart, Points Shop), Library (Home with sidebar, Collections), Community (Hub, Discussions, Forum, Workshop, Market), Profile (Main, Games, Screenshots), and Settings. Built with React + TypeScript + Tailwind v4."
 }

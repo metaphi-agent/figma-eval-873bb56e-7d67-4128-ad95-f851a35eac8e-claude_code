@@ -21,8 +21,8 @@ const libraryGames: LibraryGame[] = [
   {
     id: 'bioshock',
     title: 'Bioshock Remastered',
-    image: './assets/images/bioshock.jpg',
-    banner: './assets/images/bioshock-banner.jpg',
+    image: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=800&h=450&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=1920&h=600&fit=crop&q=80',
     installed: true,
     lastPlayed: '21 Aug 2022',
     playTime: 92,
@@ -32,8 +32,8 @@ const libraryGames: LibraryGame[] = [
   {
     id: 'doom',
     title: 'DOOM',
-    image: './assets/images/doom.jpg',
-    banner: './assets/images/doom-banner.jpg',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&h=600&fit=crop&q=80',
     installed: true,
     lastPlayed: '21 Aug 2023',
     playTime: 68,
@@ -43,8 +43,8 @@ const libraryGames: LibraryGame[] = [
   {
     id: 'borderlands-2',
     title: 'Borderlands 2',
-    image: './assets/images/borderlands2.jpg',
-    banner: './assets/images/borderlands2-banner.jpg',
+    image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&h=450&fit=crop&q=80',
+    banner: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1920&h=600&fit=crop&q=80',
     installed: true,
     playTime: 75,
     achievements: { unlocked: 35, total: 75 },

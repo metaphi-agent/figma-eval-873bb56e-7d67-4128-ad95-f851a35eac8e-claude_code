@@ -65,9 +65,7 @@ export default function Header() {
             <span className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full text-[8px] flex items-center justify-center">3</span>
           </button>
           <div className="flex items-center gap-2 cursor-pointer hover:bg-bg-hover px-2 py-1 rounded transition-colors">
-            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-red-500 via-blue-500 to-white overflow-hidden">
-              <div className="w-full h-full bg-[url('./assets/images/avatar.png')] bg-cover bg-center" />
-            </div>
+            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-red-500 via-blue-500 to-white overflow-hidden" />
             <span className="text-xs text-text-main">Juxtopposed</span>
             <span className="text-xs text-primary">$5.25</span>
             <ChevronDownIcon className="w-3 h-3 text-text-dim" />

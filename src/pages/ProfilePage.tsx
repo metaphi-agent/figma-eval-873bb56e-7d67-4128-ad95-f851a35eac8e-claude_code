@@ -56,7 +56,7 @@ const recentGames: RecentGame[] = [
   {
     id: '1',
     title: 'Mass Effect: Legendary Edition',
-    image: './assets/images/mass-effect.jpg',
+    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=200&fit=crop&q=80',
     lastPlayed: '3 Oct 2023',
     playTime: 32,
     achievements: { unlocked: 35, total: 127 },
@@ -65,7 +65,7 @@ const recentGames: RecentGame[] = [
   {
     id: '2',
     title: 'Doom',
-    image: './assets/images/doom.jpg',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=200&fit=crop&q=80',
     lastPlayed: '21 Aug 2023',
     playTime: 68,
     achievements: { unlocked: 30, total: 57 },
@@ -74,7 +74,7 @@ const recentGames: RecentGame[] = [
   {
     id: '3',
     title: 'Borderlands 2',
-    image: './assets/images/borderlands2.jpg',
+    image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400&h=200&fit=crop&q=80',
     lastPlayed: '15 Jul 2023',
     playTime: 15,
     achievements: { unlocked: 35, total: 75 },
@@ -83,13 +83,13 @@ const recentGames: RecentGame[] = [
 ];
 
 const showcaseGames = [
-  { id: '1', title: 'Mass Effect', image: './assets/images/mass-effect.jpg' },
-  { id: '2', title: 'DOOM', image: './assets/images/doom.jpg' },
-  { id: '3', title: 'Borderlands 2', image: './assets/images/borderlands2.jpg' },
-  { id: '4', title: 'Crysis', image: './assets/images/crysis.jpg' },
-  { id: '5', title: 'Skyrim', image: './assets/images/skyrim.jpg' },
-  { id: '6', title: "Garry's Mod", image: './assets/images/garrysmod.jpg' },
-  { id: '7', title: 'Fallout 4', image: './assets/images/fallout4.jpg' },
+  { id: '1', title: 'Mass Effect', image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=200&h=300&fit=crop&q=80' },
+  { id: '2', title: 'DOOM', image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=200&h=300&fit=crop&q=80' },
+  { id: '3', title: 'Borderlands 2', image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=200&h=300&fit=crop&q=80' },
+  { id: '4', title: 'Crysis', image: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=200&h=300&fit=crop&q=80' },
+  { id: '5', title: 'Skyrim', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=200&h=300&fit=crop&q=80' },
+  { id: '6', title: "Garry's Mod", image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=200&h=300&fit=crop&q=80' },
+  { id: '7', title: 'Fallout 4', image: 'https://images.unsplash.com/photo-1563089145-599997674d42?w=200&h=300&fit=crop&q=80' },
 ];
 
 const sidebarStats = [
@@ -116,7 +116,7 @@ export default function ProfilePage() {
           {/* Avatar */}
           <div className="shrink-0">
             <div className="w-40 h-40 rounded-lg bg-gradient-to-br from-red-500 via-blue-500 to-white border-4 border-bg-highlight overflow-hidden">
-              <div className="w-full h-full bg-[url('./assets/images/avatar.png')] bg-cover bg-center" />
+              <div className="w-full h-full" />
             </div>
           </div>
 
