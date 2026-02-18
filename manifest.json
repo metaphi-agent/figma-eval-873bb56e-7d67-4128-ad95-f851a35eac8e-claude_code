@@ -18,5 +18,8 @@
     "preview_url": "https://ta-01kg9f69rm57k3wk3nraa9c4er-5173.wo-tj9s1blqt8rl0egrzl0ojj3se.w.modal.host",
     "pages_implemented": 25
   },
-  "notes": "Steam Redesign - Complete implementation with 25+ pages including Store (Store Page, Discover, Browse, Wishlist, Cart, Points Shop), Library (Home with sidebar, Collections), Community (Hub, Discussions, Forum, Workshop, Market), Profile (Main, Games, Screenshots), and Settings. Built with React + TypeScript + Tailwind v4."
+  "notes": "Steam Redesign - Complete implementation with 25+ pages including Store (Store Page, Discover, Browse, Wishlist, Cart, Points Shop), Library (Home with sidebar, Collections), Community (Hub, Discussions, Forum, Workshop, Market), Profile (Main, Games, Screenshots), and Settings. Built with React + TypeScript + Tailwind v4.",
+  "preview_url": "https://ta-01khraeb5vvck76sb6vamxse94-5173.wo-98t2nfl8sadn6f2bikeisg54b.w.modal.host",
+  "updated_at": "2026-02-18T12:10:28.640763+00:00",
+  "deployed_url": "https://storage.googleapis.com/metaphi-agent/figma-claude-opus-agent/873bb56e-7d67-4128-ad95-f851a35eac8e/index.html"
 }
